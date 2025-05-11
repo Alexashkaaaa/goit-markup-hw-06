@@ -28,7 +28,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -148,7 +149,7 @@ img {
 }
 .logo {
   /* STYLE */
-  padding: 16px;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -183,7 +184,6 @@ img {
   color: #404bbf;
 }
 .burger-btn {
-  position: absolute;
   top: 16px;
   right: 16px;
   border: none;
@@ -205,7 +205,7 @@ img {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    font-size: 12px;
   }
   .burger-btn {
     display: none;
@@ -222,6 +222,7 @@ img {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+    font-size: 16px;
   }
 }
 /* Main-page */
@@ -238,7 +239,6 @@ img {
   /* LAYOUT */
   margin: 0 auto;
   max-width: 1158px;
-  padding: 188px 0;
   /* STYLE */
   background-color: var(--navyblue);
   color: #ffffff;
@@ -283,6 +283,7 @@ img {
 /* Retina mobile */
 @media screen and (min-resolution: 192dpi) {
   .call-to-action {
+    padding: 72px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -293,6 +294,7 @@ img {
 /* Tablet */
 @media screen and (min-width: 768px) {
   .call-to-action {
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -317,6 +319,7 @@ img {
 /* Desktop */
 @media screen and (min-width: 1158px) {
   .call-to-action {
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -581,7 +584,7 @@ img {
 }
 .product-name {
   /* LAYOUT */
-  padding: 32px 0 0 16px;
+
   /* STYLE */
   font-weight: 500;
   font-size: 20px;
@@ -592,7 +595,7 @@ img {
 .product-type {
   /* LAYOUT */
   margin: 0;
-  padding: 8px 16px;
+
   /* STYLE */
   font-size: 16px;
   letter-spacing: 0.02em;
@@ -949,6 +952,9 @@ img {
 .burger-close {
   background-color: transparent;
 }
+.burger-nav-list-stud {
+  color: #404bbf;
+}
 .burger-nav-list {
   /* LAYOUT */
   padding: 72px 0px;
@@ -971,6 +977,7 @@ img {
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
+  color: #4d5ae5;
 }
 .burger-social-media {
   gap: 40px;
